@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <p>Please fill out the form with the required information!</p>
+    <form action="https://register-demo.freecodecamp.org" method="post">
+        <fieldset>
+            <label for="FirstName">Enter Your First Name:<input type="text" id="FirstName" minlength="4" maxlength="20"
+                    name="Name"></label>
+            <label for="LastName">Enter Your Last Name:<input type="text" id="LastName" name="Name" minlength="4"
+                    maxlength="20"></label>
+            <label for="Email">Enter Your Email:<input type="email" name="emailaddress" id="Email" minlength="4"
+                    maxlength="20" placeholder="example@example.com">
+            </label>
+            <label for="password">Create New Password:<input type="password" name="NewPassword" minlength="4"
+                    maxlength="20" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title=" Must contain at least one number and one
+                uppercase and lowercase letter,special cahracter and at least 12 characters" required>
+            </label>
+
+        </fieldset>
+        <fieldset>
+            <label for="personal-account"><input type="radio" name="account-type" id="personal-account"
+                    class="inline">Personal
+                Account</label>
+            <label for="businness-account"><input type="radio" name="account-type" id="businness-account"
+                    class="inline">Businness
+                Account</label>
+            <label for="terms-and-conditions"><input type="checkbox" name="tc" id="terms-and-conditions"
+                    class="inline">I accept the<a href="https://www.freecodecamp.org/news/terms-of-service/">
+                    terms and conditions</a></label>
+        </fieldset>
+        <fieldset>
+            <label for="profile-picture">Upload a profile picture: <input type="file" name="" id="profile-picture"
+                    title="Upload profile picture"></label>
+            <label for="age">Input your age (years): <input type="number" name="age" id="age" min="13"
+                    max="120"></label>
+            <label for="referrer">How did you hear about us?<select name="rfr" id="referrer">
+                    <option value="1">choose one</option>
+                    <option value="1">facebook</option>
+                    <option value="1">instagram</option>
+                    <option value="1">twitter</option>
+                    <option value="1">tiktok</option>
+
+                </select></label>
+            <label for="bio">Provide a bio: <textarea name="bio" id="bio" cols="30" rows="2"
+                    placeholder="bla bla bla"></textarea></label>
+        </fieldset>
+        <input type="submit" value="Submit">
+
+
+
+    </form>
+</body>
+
+</html>
